@@ -16,3 +16,12 @@ pygame_window.blit(animation.image(), (0,0))
 
 ...
 ```
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<sprites>
+  <sprite name = "spr_category_name">
+    <frame x = "0" y = "0" w = "32" h = "32" image = "my_spritesheet.png"/>
+  </sprite>
+</sprites>
+```
