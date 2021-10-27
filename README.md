@@ -25,3 +25,27 @@ pygame_window.blit(animation.image(), (0,0))
   </sprite>
 </sprites>
 ```
+
+# Single Sprite
+Create an animated sprite object
+
+```
+@my_image_001.png  <-----image filename
+
+0x0x32x32 <-----image regions X, Y, W, H
+0x32x32x32
+0x64x32x32
+```
+
+```python
+import single_sprite as sp
+
+...
+
+my_sprite = sp.SingleSprite("spr_file.txt")
+my_sprite.play(delay = 15, repeat = True)
+
+pygame_window.blit(my_sprite.get_image_index(), (x, y))
+
+...
+```
